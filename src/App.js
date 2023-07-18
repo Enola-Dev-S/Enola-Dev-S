@@ -1,14 +1,18 @@
-//import './App.css';
 import './css/style.css';
-import Logincomponent from './component/login';
+import { Routes,Route,Link } from "react-router-dom";
+import Logins from "./components/Logins";
+import Main from "./components/Main";
+
 
 function App() {
+  const selog = '0';
   return (
-    <div className="App">
-      <header >
-        <Logincomponent/>
-              </header>
-      
+    <div className="App"> 
+    <Routes>
+      <Route path="/" element={<Logins/>} />
+      <Route path="Login" element={<Logins/>} />
+      <Route path="Main" element={<Main/>} />
+    </Routes>
     </div>
   );
 }

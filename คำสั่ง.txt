@@ -1,0 +1,18 @@
+js คีลัด
+rfce -- สร้าง react 
+
+https://melivecode.com/ api test 
+
+
+
+
+
+
+---------------------------------login
+npm install react-router-dom@6
+npm install --save sweetalert2 sweetalert2-react-content
+
+
+---------------------------------api
+npm install express cors
+npm install -g nodemon
