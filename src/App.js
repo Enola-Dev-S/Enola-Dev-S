@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header >
-        logincomponent
+        
        
       </header>
     </div>
