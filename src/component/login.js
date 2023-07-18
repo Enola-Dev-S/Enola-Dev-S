@@ -1,4 +1,5 @@
-function logincomponent() {
+
+const Logincomponent = ()=> {
     return (
         <div class="container">
             <div class="screen">
@@ -37,4 +38,4 @@ function logincomponent() {
     );
 }
 
-export default logincomponent;
+export default Logincomponent;
