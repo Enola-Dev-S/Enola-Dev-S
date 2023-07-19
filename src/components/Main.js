@@ -13,7 +13,7 @@ function Main() {
       <div>Main</div>
       <p>อีหยังว่ะ</p>
 
-        <button className='Submit' onClick={clickHandler} >Back</button>
+        <button className='Submit' onClick={clickHandler} >Back เด้อ</button>
 
       
       </div>
