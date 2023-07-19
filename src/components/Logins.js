@@ -93,7 +93,7 @@ function Logins() {
                             class="login__input"  
                             //placeholder="User name / Email" 
                             onChange={handleChange}
-                            value={inputs.username ="karn.yong@melivecode. com"} 
+                            value={inputs.username ="karn.yong@melivecode.com"} 
                             />
                         </div>
                         <div class="login__field">
@@ -127,6 +127,7 @@ function Logins() {
                 </div>
             </div>
         </div>
+        
   )
 }
 

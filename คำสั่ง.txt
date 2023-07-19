@@ -5,7 +5,9 @@ https://melivecode.com/ api test
 
 
 
-
+new clone
+git init
+npm install 
 
 
 ---------------------------------login
