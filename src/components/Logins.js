@@ -24,7 +24,7 @@ function Logins() {
     var raw = JSON.stringify({
       "username": inputs.username,
       "password": inputs.password,
-      "expiresIn": 60000
+      "expiresIn": 15000
     });
 
     var requestOptions = {
@@ -43,6 +43,7 @@ function Logins() {
             html: <i>{result.message}</i>,
             icon: 'success'
           }).then((value) => {
+            localStorage.setItem('token',result.accessToken)
             navigate('/Main')
           })
         }else{
@@ -58,31 +59,6 @@ function Logins() {
   }
 
   return (
-    // <div>
-    //    <form onSubmit={handleSubmit}>
-    //   <label>Enter Username:
-    //   <input 
-    //     type="text" 
-    //     name="username" 
-    //     class="login__input"
-    //     value={inputs.username ="karn.yong@melivecode.com"} 
-    //     //value={inputs.username || "karn.yong@melivecode.com"} 
-    //     onChange={handleChange}
-    //   />
-    //   </label>
-    //   <label>Enter Password:
-    //     <input 
-    //       type="password" 
-    //       name="password" 
-    //       value={inputs.password ="melivecode"} 
-    //       //value={inputs.password || "melivecode"} 
-    //       onChange={handleChange}
-    //     />
-    //     <p>"username": "karn.yong@melivecode.com", "password": "melivecode",</p>
-    //     </label>
-    //     <input type="submit" />
-    // </form>
-    // </div>
     <div class="container">
             <div class="screen">
                 <div class="screen__content">
