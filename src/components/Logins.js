@@ -58,8 +58,14 @@ function Logins() {
     console.log(inputs);
   }
 
+  const clickRegister = () =>{
+    localStorage.removeItem('token')
+    navigate('Register',{replace:true});
+  };
+
   return (
-    <div class="container">
+    <body class="body">
+    <div class="container ">
             <div class="screen">
                 <div class="screen__content">
                     <form class="login" onSubmit={handleSubmit}>
@@ -89,7 +95,7 @@ function Logins() {
                     <div class="social-login">
                         <h3>log in via</h3>
                         <div class="social-icons">
-                            <a href="#" class="social-login__icon fab fa-instagram"></a>
+                            <a class="social-login__icon fab fa-instagram" onClick={clickRegister}></a>
                             <a href="#" class="social-login__icon fab fa-facebook"></a>
                             <a href="#" class="social-login__icon fab fa-twitter"></a>
                         </div>
@@ -103,7 +109,7 @@ function Logins() {
                 </div>
             </div>
         </div>
-        
+        </body>
   )
 }
 
