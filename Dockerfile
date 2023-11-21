@@ -8,6 +8,4 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 RUN npm install
 
-EXPOSE 8080
-
 CMD [ "npm","start" ]
